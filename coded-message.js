@@ -1,9 +1,9 @@
 /* 
     This function takes a coded message argument (codedMessage) and returns a decoded message using these steps:
-    1. It takes the string 'abcdefghijklmnopqrstuvwxyz_' (baseKeyString)
-    2. It sorts the characters in the string by the number of times each character appears in the codedMessage argument (in descending order)
-    3. It removes all the characters from this sorted string after (and including) the _
-    4. It then returns the resulting word (decodedMessage)
+        1. It takes the string 'abcdefghijklmnopqrstuvwxyz_' (baseKeyString)
+        2. It sorts the characters in the string by the number of times each character appears in the codedMessage argument (in descending order)
+        3. It removes all the characters from this sorted string after (and including) the _
+        4. It then returns the resulting word by concatinating the characters that remain (decodedMessage)
 */
 
 const decodeMessage = (codedMessage) => {
@@ -33,14 +33,15 @@ const decodeMessage = (codedMessage) => {
     // Find the index of the object with the key equal to '_'
     const endIndex = charOccurancesArray.findIndex(obj => obj.key === '_');
 
-    let decodedMessage = ''; 
-
     /*
         Slice the sorted array of stored character occurances to create an array with only those characters that
         occur more frequently than '_' and concatinate each of those characters, 
         in descending order of occurances, to reveal the decoded message 
     */
-    charOccurancesArray.slice(0, endIndex).forEach(obj => decodedMessage += obj.key);
+    const decodedMessage = charOccurancesArray
+        .slice(0, endIndex)
+        .map(obj => obj.key)
+        .join('');
     
     return decodedMessage;
 }

@@ -332,7 +332,7 @@ main {
     .section-outer-container .figure,
     .section-middle-container {
         width: 50%;
-        height: 300px;
+        height: 350px;
     }
 
     .section-outer-container .figure {
@@ -389,7 +389,8 @@ main {
 
     .section-outer-container.first .section-middle-container,
     .section-outer-container.second .section-middle-container {
-        padding: 40px 0;
+        padding: 35px 0;
+        justify-content: space-between;
     }
 
     .section-3 {
@@ -450,7 +451,7 @@ main {
     }
 
     .section-middle-container {
-        height: 300px;
+        height: 350px;
         justify-content: space-between;
     }
 

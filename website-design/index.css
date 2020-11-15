@@ -180,7 +180,7 @@ main {
 }
 
 .h2 {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 200;
     margin: 0;
     text-align: justify;
@@ -231,7 +231,7 @@ main {
 .tint .p {
     color: white;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 34px;
     z-index: 10;
 }
 
@@ -328,9 +328,25 @@ main {
 }
 
 @media screen and (min-width: 750px) {
+    .section-outer-container {
+        width: 90%;
+    }
+
     .section-outer-container .figure,
     .section-middle-container {
         width: 50%;
+        height: 300px;
+    }
+
+    .section-outer-container .figure {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .section-outer-container .figure .image {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
     }
 
     .section-outer-container.first .figure {
@@ -367,6 +383,11 @@ main {
         padding: 0;
     }
 
+    .section-outer-container.first .section-middle-container,
+    .section-outer-container.second .section-middle-container {
+        padding: 40px 0;
+    }
+
     .section-3 {
         flex-direction: row;
     }
@@ -396,7 +417,7 @@ main {
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1050px) {
     .logo-text {
         font-size: 30px;
     }

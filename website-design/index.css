@@ -128,7 +128,7 @@ main {
 }
 
 .section-2 {
-    margin-bottom: 20px;
+    margin: 50px 0;
 }
 
 .section-2 .figure {
@@ -169,6 +169,7 @@ main {
     padding: 0 20px;
     text-align: justify;
 }
+
 
 .grey {
     color: #95989c;
@@ -215,6 +216,7 @@ main {
     height: 100%;
     position: absolute;
     z-index: -10;
+    object-fit: cover;
 }
 
 .tint {
@@ -256,11 +258,6 @@ main {
 
 .testimonial {
     background-color: #3e7eca;
-}
-
-.blockquote {
-    margin: 50px;
-    width: 65%;
 }
 
 .testimonial .p {
@@ -470,8 +467,13 @@ main {
     }
 
     .section-middle-container .button {
-        width: 75%;
+        width: 65%;
         margin: 0;
+    }
+
+    .blockquote {
+        margin: 40px;
+        width: 65%;
     }
  
     .nav {
@@ -490,6 +492,10 @@ main {
 
     .footer {
         width: 70%;
+    }
+
+    .footer-top {
+        margin-bottom: 60px;
     }
 
     .footer-bottom {

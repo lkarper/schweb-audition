@@ -360,7 +360,9 @@ main {
     }
 
     .section-outer-container.first p {
-        text-align: right;
+        /* "text-align-last: right;" is not supported by Safari */
+        direction: rtl;
+        text-align: justify;
     }
 
     .section-outer-container.second {
@@ -422,8 +424,32 @@ main {
         font-size: 30px;
     }
 
+    .header-hero {
+        margin: 40px 0;
+    }
+
+    .header-hero .button {
+        margin-top: 40px;
+        width: 40%;
+    }
+
+    .section-2 {
+        margin: 50px 0;
+    } 
+
     .section-outer-container {
         width: 65%;
+        margin: 50px 0;
+    }
+
+    .section-outer-container.first .section-middle-container,
+    .section-outer-container.second .section-middle-container {
+        padding: 10px 0 0 0;
+    }
+
+    .section-middle-container {
+        height: 300px;
+        justify-content: space-between;
     }
 
     .h1 {
@@ -434,8 +460,18 @@ main {
         font-size: 36px;
     }
 
+    .section-container .p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
     .button {
         width: 50%;
+    }
+
+    .section-middle-container .button {
+        width: 75%;
+        margin: 0;
     }
  
     .nav {
@@ -454,6 +490,10 @@ main {
 
     .footer {
         width: 70%;
+    }
+
+    .footer-bottom {
+        padding-right: 20px;
     }
 
     .nav-ul.bottom {

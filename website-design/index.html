@@ -43,7 +43,9 @@
                 <div class="section-middle-container">
                     <div class="section-container grey">
                         <h2 class="h2">HEADING HERE 1</h2>
-                        <p class="p">Veniam est occaecat occaecat nulla. Proident commodo magna quis ex anim nisi nostrud Lorem sint do. Cillum eu duis culpa commodo sit voluptate Lorem officia quis qui dolor nostrud enim.</p>
+                        <!-- Final punctuation below must be floated right for proper rendering of final line justified right, 
+                            or else it renders at beginning of line.  "text-align-last" not supported by Safari. -->
+                        <p class="p">Veniam est occaecat occaecat nulla. Proident commodo magna quis ex anim nisi nostrud Lorem sint do. Cillum eu duis culpa commodo sit voluptate officia quis qui dolor nostrud enim<span style="float: right">.</span></p>
                     </div>
                     <button class="button green" type="button">BUTTON 1</button>
                 </div>

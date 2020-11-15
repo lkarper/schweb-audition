@@ -362,6 +362,11 @@ main {
         text-align: justify;
     }
 
+    .float-right {
+        /* Used to push punctuation to end of line, so that text can be justified and aligned right */
+        float: right;
+    }
+
     .section-outer-container.second {
         flex-direction: row;
     }

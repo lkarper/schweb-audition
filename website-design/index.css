@@ -170,7 +170,6 @@ main {
     text-align: justify;
 }
 
-
 .grey {
     color: #95989c;
 }
@@ -197,7 +196,7 @@ main {
     color: #8aae8f;    
 }
 
-.button  {
+.button {
     background-color: #fafffe;
     width: 90%;
     font-size: 24px;
